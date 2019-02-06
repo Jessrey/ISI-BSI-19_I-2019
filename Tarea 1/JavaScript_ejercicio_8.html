@@ -1,0 +1,25 @@
+<!-- 
+Ejercicio 8
+ -->
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+		<title>Ejercicio 8</title>
+	</head>
+	<body>
+		<script>
+			var cadena = prompt("Digete el texto deseada ");
+			function analizar_cadena(cad_txt){
+				if (cad_txt==cad_txt.toLowerCase() ) {
+					document.body.innerHTML += "El texto ingresado esta compuesto únicamente por letras minusculas.";
+				}else if (cad_txt == cad_txt.toUpperCase()) {
+					document.body.innerHTML += "El texto ingresado esta compuesto únicamente por letras mayusculas.";
+				} else {
+					document.body.innerHTML += "El texto ingresado esta compuesto por letras minusculas y mayusculas.";
+				}
+			}
+			analizar_cadena(cadena);
+		</script>
+	</body>
+</html>

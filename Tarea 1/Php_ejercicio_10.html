@@ -1,0 +1,70 @@
+<!-- 
+Ejercicio 10
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+		<title>Ejercicio 10</title>
+	</head>
+	<body>
+		<form action="Php_ejercicio_10.php" method="post">
+			<!--Un campo de texto plano-->
+			<br>
+			<p>Ingrese su nombre:</p>
+			<input type="text" name="txt_1" >
+			<br>
+
+			<!--Un área de texto de 3 líneas-->
+			<br>
+			<p>Area Texto:</p>
+			<textarea  name="txt_2" rows="3" cols="25" disabled>
+Número 1 
+Número 2 
+Número 3 
+			</textarea><br>
+		
+			<!--Un campo de selección-->
+			<br>
+			<p>Ingrese su genero</p>
+			<select name="genero">
+				<option value="Hombre">Hombre</option>
+				<option value="Mujer">Mujer</option>
+				<option value="Other" selected> Otro</option>
+			</select>
+			<br>
+		
+			<!--Un campo de tipo check-->
+			<br>
+			<p>Rango de edad</p>
+			<input type="checkbox" name="rango" value="18-25">Entre 18 - 25 
+			<br>
+			<input type="checkbox" name="rango" value="25-35" >Entre 26 - 35 
+			<br>
+			<input type="checkbox" name="rango" value="35-45" >Entre 36 - 45 
+			<br>
+			<input type="checkbox" name="rango" value="Más de 45" >Más de 45 
+			<br>
+
+
+			<!--Un grupo de campos radiales-->
+			<br>
+			<p>Estado Civil</p>
+			<input type="radio" name="stat_civil" value="Soltero"> Soltero
+			<br>
+			<input type="radio" name="stat_civil" value="Casado"> Casado
+			<br>
+			<input type="radio" name="stat_civil" value="Divorciado" > Divorciado
+			<br>
+			<input type="radio" name="stat_civil" value="Otro" > Otro
+			<br>
+		
+			<!--Un campo de tipo rango-->
+			<br>
+			<p>Nivel Satisfaccion:</p>
+			<input type="range" name="satisfaccion" min="0" max="100">
+			<p> Insatisfecho &nbsp; &nbsp; &nbsp; Muy satisfecho </p>
+			<input type="submit">
+		</form>
+	</body>
+</html>

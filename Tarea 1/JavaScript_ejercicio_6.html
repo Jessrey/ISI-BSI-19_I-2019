@@ -1,0 +1,22 @@
+<!-- 
+Ejercicio 6
+ -->
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+		<title>Ejercicio 6</title>
+	</head>
+	<body>
+		<script>
+			var numero = prompt("Ingrese el número que desea calcular");
+			var resultado =numero;
+			
+			for (var i = numero; i > 1; i--) {	
+				resultado = resultado*(i-1);
+			}
+			
+			document.body.innerHTML += "<p>El numero " +numero+" tiene como factorial "+resultado+".</p>";
+		</script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- 
+Ejercicio 7
+ -->
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+		<title>Ejercicio 7</title>
+	</head>
+	<body>
+		<script>
+			function check_Num(num) {
+				if (num%2==0) {
+					document.body.innerHTML += "<p>El número "+num+" es par.</p>";
+				}else{ 
+					document.body.innerHTML += "<p>El número "+num+" es impar.</p>";
+				}
+			}
+			var numero = prompt("Ingrese el numero entero que desea determinar");
+			check_Num(numero);
+		</script>
+	</body>
+</html>
