@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Calculadora</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	function calcular(){
+		var val1 = document.getElementById("valor1").value;
+		var val2 = document.getElementById("valor2").value;
+		var op = document.getElementById("operacion").value;
+$.ajax({
+				url: "calculadora.php",
+				type: 'POST',
+				data: {
+					valor1: val1,
+					valor2: val2,
+					opera: op
+				},
+				success: function( result ) {
+document.getElementById('contenedor_resultados').innerHTML = result;
+				}
+			});
+	}
+</script>
+</head>
+<body>
+<form>
+Valor 1: <input type="number" id="valor1"></input><br/>
+Valor 2: <input type="number" id="valor2"></input><br/>
+Operación: <select id="operacion">
+<option value="sumar">Sumar</option>
+<option value="restar">Restar</option>
+<option value="multiplicar">Multiplicar</option>
+<option value="dividir">Dividir</option>
+</select><br/>
+<input type="button" value="Calcular" onclick="calcular()"></input>
+</form>
+<hr/>
+<div id="contenedor_resultados"></div>
+</body>
+</html>
